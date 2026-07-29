@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Chivato</title>
+<style>
+  :root {
+    --bg: #0b0e13; --surface: #141922; --border: #232b37;
+    --text: #edf2f7; --muted: #8d99ae; --accent: #00e676;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff; --surface: #f5f7fa; --border: #dfe4ec;
+      --text: #14181f; --muted: #5a6577; --accent: #00a85a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 0 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { padding: 56px 0 12px; }
+  .mark { display: flex; align-items: center; gap: 14px; }
+  .mark svg { width: 44px; height: 44px; flex: none; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; margin: 26px 0 6px; }
+  h2 {
+    font-size: 20px; letter-spacing: -0.2px; margin: 44px 0 10px;
+    padding-top: 22px; border-top: 1px solid var(--border);
+  }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+  .lede {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin: 26px 0 0;
+  }
+  .lede strong { color: var(--accent); }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  code {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 5px; padding: 1px 6px; font-size: 15px;
+  }
+  footer {
+    margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">
+      <svg viewBox="0 0 1000 1000" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5bffa8"/><stop offset="1" stop-color="#00a85a"/>
+          </linearGradient>
+          <mask id="m">
+            <rect width="1000" height="1000" fill="#000"/>
+            <g fill="#fff">
+              <rect x="30" y="305" width="372" height="123" rx="61"/>
+              <path d="M330 250h460v180a208 208 0 0 1-208 208H538a208 208 0 0 1-208-208z"/>
+              <rect x="330" y="250" width="460" height="220" rx="72"/>
+              <circle cx="706" cy="190" r="83"/>
+            </g>
+            <rect x="398" y="236" width="148" height="120" rx="22" fill="#000"/>
+            <circle cx="706" cy="190" r="43" fill="#000"/>
+          </mask>
+        </defs>
+        <rect width="1000" height="1000" fill="url(#g)" mask="url(#m)"/>
+      </svg>
+      <strong style="font-size:21px">Chivato</strong>
+    </div>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 29 de julio de 2026</p>
+  </header>
+
+  <p>Chivato es una aplicación <strong>offline</strong>. Se instala, se usa y se
+  desinstala sin crear ninguna cuenta y sin que exista un servidor detrás. Esta
+  página explica, sin rodeos, qué pasa con tus datos.</p>
+
+  <div class="lede">
+    Todo lo que escribes en Chivato —ligas, rivales, saldos, movimientos— se
+    guarda <strong>solo en tu teléfono</strong>. Nadie más lo ve, nosotros
+    incluidos.
+  </div>
+
+  <h2>Qué datos guarda la app</h2>
+  <p>Chivato crea una base de datos local en el almacenamiento privado de la
+  aplicación, dentro de tu dispositivo. Ahí viven:</p>
+  <ul>
+    <li>Los nombres que le pones a tus ligas y su límite de deuda.</li>
+    <li>Los nombres de tus rivales.</li>
+    <li>Los movimientos que registras (compras, ventas, abonos y multas) y los
+    saldos que se calculan a partir de ellos.</li>
+  </ul>
+  <p>Estos datos <strong>no se envían a ningún sitio</strong>. No hay
+  sincronización, ni copia de seguridad en la nube, ni cuenta de usuario. Si
+  desinstalas la app, desaparecen con ella.</p>
+  <p>Los importes que manejas son la moneda virtual de tu liga de fantasy.
+  Chivato no procesa dinero real, no tiene pagos ni compras dentro de la
+  aplicación.</p>
+
+  <h2>Qué datos salen del dispositivo</h2>
+  <p>Uno solo, y siempre porque tú lo decides: <strong>el buzón de
+  sugerencias</strong>.</p>
+  <p>Si abres el buzón y envías un mensaje, Chivato transmite exactamente dos
+  cosas:</p>
+  <ul>
+    <li>El texto que has escrito.</li>
+    <li>La categoría que has elegido (<em>Fallo</em>, <em>Idea</em> u <em>Otra
+    cosa</em>).</li>
+  </ul>
+  <p>Nada más. No se adjunta tu nombre, ni tu correo, ni un identificador de
+  dispositivo, ni tu ubicación, ni el contenido de tus ligas. No hay forma de
+  saber qué envío corresponde a qué instalación.</p>
+  <p>El mensaje llega a un formulario de Google Forms propiedad del
+  desarrollador. Google actúa como proveedor del servicio y registra la fecha y
+  hora del envío; su tratamiento se rige por la
+  <a href="https://policies.google.com/privacy">política de privacidad de
+  Google</a>. Si escribes datos personales en el cuerpo del mensaje, se enviarán
+  tal cual: es la única forma de que la app sepa algo sobre ti, y depende
+  enteramente de ti.</p>
+  <p>Base legal (RGPD): tu consentimiento, que das al pulsar «Enviar».</p>
+
+  <h2>Qué NO hace Chivato</h2>
+  <ul>
+    <li>No lleva publicidad.</li>
+    <li>No lleva analítica, telemetría ni informes de fallos automáticos.</li>
+    <li>No rastrea tu actividad dentro ni fuera de la aplicación.</li>
+    <li>No comparte, vende ni cede datos a terceros con fines comerciales.</li>
+    <li>No pide permisos del sistema: ni cámara, ni contactos, ni ubicación, ni
+    notificaciones. El único permiso declarado es acceso a internet, y se usa
+    exclusivamente para enviar sugerencias.</li>
+  </ul>
+
+  <h2>Menores</h2>
+  <p>Chivato no está dirigida a menores de 13 años y no recopila conscientemente
+  datos de ellos. Como la app no recoge datos identificativos, tampoco hay
+  perfil de menor que crear.</p>
+
+  <h2>Tus derechos</h2>
+  <ul>
+    <li><strong>Tus datos de la app</strong>: los controlas por completo desde el
+    propio dispositivo. Puedes borrar ligas y movimientos dentro de Chivato, o
+    desinstalarla para eliminarlo todo de una vez. No hace falta pedírnoslo,
+    porque no tenemos copia.</li>
+    <li><strong>Tus sugerencias</strong>: si quieres que se borre un mensaje que
+    enviaste, escribe a la dirección de contacto indicando aproximadamente
+    cuándo lo mandaste y qué decía. También puedes ejercer los derechos de
+    acceso, rectificación, supresión, limitación, portabilidad y oposición que
+    te reconoce el RGPD.</li>
+  </ul>
+
+  <h2>Conservación</h2>
+  <p>Las sugerencias se conservan mientras sigan siendo útiles para mejorar la
+  app, y se eliminan cuando dejan de serlo o cuando lo solicitas.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si cambia algo relevante, se actualizará esta página y la fecha de arriba.
+  Si el cambio afectara a datos que salen del dispositivo, se avisará dentro de
+  la app antes de aplicarlo.</p>
+
+  <h2>Contacto</h2>
+  <p>Responsable del tratamiento: Marc Serra.<br>
+  Correo: <a href="mailto:mserrahidalgo@gmail.com">mserrahidalgo@gmail.com</a></p>
+
+  <footer>
+    Chivato es un proyecto independiente. No está afiliado, patrocinado ni
+    avalado por Biwenger, Mister, LaLiga ni ninguna otra marca mencionada; los
+    nombres se citan únicamente para describir con qué tipo de liga es
+    compatible la aplicación.
+  </footer>
+</main>
+</body>
+</html>
