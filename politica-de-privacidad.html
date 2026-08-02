@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Chivato</title>
+<style>
+  :root {
+    --bg: #0b0e13; --surface: #141922; --border: #232b37;
+    --text: #edf2f7; --muted: #8d99ae; --accent: #00e676;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff; --surface: #f5f7fa; --border: #dfe4ec;
+      --text: #14181f; --muted: #5a6577; --accent: #00a85a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 0 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { padding: 56px 0 12px; }
+  .mark { display: flex; align-items: center; gap: 14px; }
+  .mark svg { width: 44px; height: 44px; flex: none; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; margin: 26px 0 6px; }
+  h2 {
+    font-size: 20px; letter-spacing: -0.2px; margin: 44px 0 10px;
+    padding-top: 22px; border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+  .lede {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 18px 20px; margin: 26px 0 0;
+  }
+  .lede strong { color: var(--accent); }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  code {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 5px; padding: 1px 6px; font-size: 15px;
+  }
+  /* Las tablas se salen en un móvil estrecho: que se desplacen ellas y no la
+     página entera. */
+  .scroll { overflow-x: auto; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td {
+    text-align: left; padding: 9px 12px;
+    border-bottom: 1px solid var(--border); vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  footer {
+    margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">
+      <svg viewBox="0 0 1000 1000" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5bffa8"/><stop offset="1" stop-color="#00a85a"/>
+          </linearGradient>
+          <mask id="m">
+            <rect width="1000" height="1000" fill="#000"/>
+            <g fill="#fff">
+              <rect x="30" y="305" width="372" height="123" rx="61"/>
+              <path d="M330 250h460v180a208 208 0 0 1-208 208H538a208 208 0 0 1-208-208z"/>
+              <rect x="330" y="250" width="460" height="220" rx="72"/>
+              <circle cx="706" cy="190" r="83"/>
+            </g>
+            <rect x="398" y="236" width="148" height="120" rx="22" fill="#000"/>
+            <circle cx="706" cy="190" r="43" fill="#000"/>
+          </mask>
+        </defs>
+        <rect width="1000" height="1000" fill="url(#g)" mask="url(#m)"/>
+      </svg>
+      <strong style="font-size:21px">Chivato</strong>
+    </div>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: 2 de agosto de 2026</p>
+  </header>
+
+  <p>Chivato se instala y se usa <strong>sin crear ninguna cuenta con
+  nosotros</strong>. Esta página explica, sin rodeos, qué pasa con tus datos:
+  qué se queda en tu teléfono, qué sale de él, hacia dónde va y qué puedes
+  hacer al respecto.</p>
+
+  <div class="lede">
+    Todo lo que hay en Chivato —ligas, rivales, saldos, movimientos— se guarda
+    <strong>solo en tu teléfono</strong>. Nadie más lo ve, nosotros incluidos.
+    <br><br>
+    De tu dispositivo salen tres cosas, y ninguna lleva el contenido de tus
+    ligas: lo que le pides a Biwenger cuando sincronizas, un informe técnico si
+    la app se rompe, y lo que escribas en el buzón de sugerencias.
+  </div>
+
+  <h2>Quién es el responsable</h2>
+  <p>Responsable del tratamiento: <strong>Marc Serra</strong>.<br>
+  Correo de contacto: <a href="mailto:appchivato@gmail.com">appchivato@gmail.com</a></p>
+  <p>Chivato es un proyecto independiente de una sola persona. No hay empresa,
+  ni equipo, ni servidor propio con datos de usuarios.</p>
+
+  <h2>Qué datos guarda la app en tu teléfono</h2>
+  <p>Chivato crea una base de datos local en el almacenamiento privado de la
+  aplicación, dentro de tu dispositivo. Ahí viven:</p>
+  <ul>
+    <li>Los nombres de tus ligas y sus reglas: presupuesto inicial, método de
+    puja máxima y primas por puesto.</li>
+    <li>Los nombres de tus rivales, los escribas tú o lleguen de Biwenger.</li>
+    <li>Los movimientos (compras, ventas, cláusulas, cesiones, abonos y multas)
+    y los saldos que se calculan a partir de ellos.</li>
+    <li>Los datos de mercado de los jugadores de tu liga, si la tienes
+    conectada.</li>
+  </ul>
+  <p>Estos datos <strong>no se envían a ningún sitio</strong>. No hay copia de
+  seguridad en la nube, ni cuenta de usuario, ni sincronización con ningún
+  servicio nuestro. Si desinstalas la app, desaparecen con ella.</p>
+  <p>Los importes que manejas son la moneda virtual de tu liga de fantasy.
+  Chivato no procesa dinero real, no tiene pagos ni compras dentro de la
+  aplicación.</p>
+
+  <h2>Qué sale del dispositivo</h2>
+  <p>Esto es todo, y lo tienes desglosado una por una debajo.</p>
+  <div class="scroll">
+    <table>
+      <tr><th>Qué</th><th>Cuándo</th><th>Hacia dónde</th></tr>
+      <tr>
+        <td>Peticiones a la API de Biwenger</td>
+        <td>Solo cuando pulsas conectar o sincronizar</td>
+        <td>Servidores de Biwenger</td>
+      </tr>
+      <tr>
+        <td>Informe técnico de un fallo</td>
+        <td>Solo si la app se rompe. Se puede desactivar</td>
+        <td>Firebase Crashlytics (Google)</td>
+      </tr>
+      <tr>
+        <td>Comprobación de versión mínima</td>
+        <td>Al arrancar la app</td>
+        <td>Firebase Remote Config (Google)</td>
+      </tr>
+      <tr>
+        <td>Texto del buzón de sugerencias</td>
+        <td>Solo si escribes y pulsas enviar</td>
+        <td>Google Forms</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>1. Si conectas tu cuenta de Biwenger</h2>
+  <p>Conectar la cuenta es <strong>opcional</strong>. La app funciona entera sin
+  hacerlo: puedes crear tus ligas y apuntar los movimientos a mano.</p>
+
+  <h3>Tu contraseña no pasa por Chivato</h3>
+  <p>Al pulsar «Conectar», la app abre <strong>la página de acceso real de
+  Biwenger</strong> dentro de una ventana del navegador del sistema. Tecleas
+  ahí, contra su servidor. Chivato no lee ese formulario, no guarda tu
+  contraseña y no tiene forma de recuperarla.</p>
+  <p>Lo único que Chivato toma de esa ventana es la <strong>credencial de
+  sesión</strong> que la propia web de Biwenger genera al entrar. Se guarda en
+  el almacén seguro del sistema operativo —Llavero en iOS, Keystore en
+  Android—, no en la base de datos de la app.</p>
+
+  <h3>Qué se pide y qué se guarda</h3>
+  <p>Con esa sesión, y <strong>solo cuando tú pulsas conectar o
+  sincronizar</strong>, tu teléfono hace peticiones a la API de Biwenger para
+  leer:</p>
+  <div class="scroll">
+    <table>
+      <tr><th>Se pide</th><th>Se guarda en tu teléfono</th></tr>
+      <tr>
+        <td>Tu identificador de usuario y la lista de tus ligas</td>
+        <td>El identificador de la liga que elijas</td>
+      </tr>
+      <tr>
+        <td>Los mánagers de esa liga (nombre e identificador)</td>
+        <td>Su nombre, como rival de tu liga</td>
+      </tr>
+      <tr>
+        <td>El tablón de movimientos (fichajes, traspasos, importes y fechas)</td>
+        <td>Los movimientos, para calcular saldos</td>
+      </tr>
+      <tr>
+        <td>Los datos de mercado de los jugadores de la liga</td>
+        <td>Nombre, precio y estado, para valorar las plantillas</td>
+      </tr>
+    </table>
+  </div>
+  <p>No se piden ni se guardan tu correo, tu contraseña, tu método de pago ni
+  ningún otro dato de tu cuenta de Biwenger, aunque su respuesta incluya algunos
+  de esos campos: se descartan al procesarla.</p>
+  <p>Ese tráfico va <strong>de tu teléfono a Biwenger, directamente</strong>. No
+  pasa por ningún sistema nuestro y no recibimos copia de nada de lo que
+  vuelve.</p>
+
+  <h3>Datos de otras personas</h3>
+  <p>Al traer la plantilla de tu liga, Chivato guarda en tu dispositivo <strong>los
+  nombres públicos de los demás mánagers</strong> y los movimientos que ya son
+  visibles para todos los miembros de la liga dentro de la propia Biwenger.</p>
+  <p>Esa información no sale de tu teléfono, no se comparte con nadie y no se usa
+  para nada que no sea calcular las pujas máximas que ves en pantalla. Es el
+  mismo dato que antes tecleabas a mano; lo que cambia es que ahora llega
+  solo.</p>
+
+  <h3>Base legal y control</h3>
+  <ul>
+    <li><strong>Base legal (RGPD)</strong>: tu consentimiento, que das al pulsar
+    «Conectar» (art. 6.1.a).</li>
+    <li><strong>Retirarlo</strong>: puedes desvincular la cuenta cuando quieras
+    desde la propia app. Al hacerlo se borra la credencial de sesión del almacén
+    seguro. Los movimientos ya importados se quedan, porque son tuyos; puedes
+    borrarlos eliminando la liga.</li>
+    <li><strong>Tu cuenta en Biwenger</strong>: Chivato solo lee. No publica, no
+    puja, no vende, no modifica nada en tu equipo ni en tu liga.</li>
+  </ul>
+
+  <h3>Sobre Biwenger</h3>
+  <p>Biwenger es un servicio de terceros con el que Chivato no tiene ninguna
+  relación. Al conectarte, tu tráfico va a sus servidores y <strong>su
+  tratamiento de datos se rige por su propia política de privacidad</strong>, no
+  por esta. Chivato usa su interfaz no oficial: puede dejar de funcionar en
+  cualquier momento, y si eso pasa la app te lo dirá y seguirá funcionando en
+  modo manual.</p>
+
+  <h2>2. Informes de fallos</h2>
+  <p>Chivato usa <strong>Firebase Crashlytics</strong>, de Google, para
+  enterarse de que la app se ha roto. Sin eso, un fallo que solo aparece en un
+  modelo de móvil concreto no se arregla nunca, porque nadie llega a
+  contarlo.</p>
+
+  <h3>Qué se envía, y solo cuando algo falla</h3>
+  <ul>
+    <li>El punto exacto del código donde se rompió (la traza del error).</li>
+    <li>Modelo de dispositivo, versión del sistema operativo, idioma, memoria
+    libre y si la app estaba en primer plano.</li>
+    <li>La versión de Chivato que tenías instalada.</li>
+    <li>Un identificador aleatorio que genera Firebase para esa instalación.</li>
+  </ul>
+  <p><strong>Qué no se envía</strong>: nada de tus ligas. Ni nombres de rivales,
+  ni saldos, ni movimientos, ni tu sesión de Biwenger, ni tu correo, ni tu
+  nombre, ni tu ubicación. El informe es técnico y describe el programa, no a
+  ti.</p>
+  <p>Ese identificador aleatorio no lleva tu nombre y no se cruza con nada, pero
+  sí permite saber que dos fallos vienen del mismo teléfono. Por eso te lo
+  contamos aquí y por eso puedes apagarlo.</p>
+
+  <h3>Cómo lo apagas</h3>
+  <p>En la app, en <strong>Privacidad y legal → Informes de fallos</strong>. El
+  interruptor viene activado; en cuanto lo apagas, deja de enviarse nada y la
+  decisión se recuerda.</p>
+
+  <h3>Base legal</h3>
+  <p>Interés legítimo (art. 6.1.f del RGPD) en mantener la aplicación estable y
+  segura. Puedes oponerte en cualquier momento con el interruptor de arriba, sin
+  dar explicaciones y sin perder ninguna función de la app.</p>
+
+  <h2>3. Comprobación de versión mínima</h2>
+  <p>Chivato usa <strong>Firebase Remote Config</strong>, también de Google,
+  para una sola cosa: poder frenar una versión con un fallo grave sin esperar a
+  que las tiendas aprueben una actualización. Al arrancar, la app pregunta cuál
+  es la versión mínima aceptable y la compara con la que tienes instalada.</p>
+  <p>En esa consulta viajan el mismo identificador aleatorio de instalación, la
+  versión de la app y el tipo de dispositivo. <strong>No viaja ningún dato tuyo
+  ni de tus ligas</strong>: la app pregunta, y le contestan.</p>
+  <p><strong>Base legal</strong>: interés legítimo (art. 6.1.f) en poder retirar
+  de circulación una versión defectuosa. Esta comprobación no se puede
+  desactivar, porque es el único mecanismo que tiene la app para protegerte de
+  una versión rota; a cambio, no recoge nada de ti.</p>
+
+  <h2>4. Buzón de sugerencias</h2>
+  <p>Si abres el buzón y envías un mensaje, Chivato transmite exactamente tres
+  cosas:</p>
+  <ul>
+    <li>El texto que has escrito.</li>
+    <li>La categoría que has elegido (<em>Fallo</em>, <em>Idea</em> u <em>Otra
+    cosa</em>).</li>
+    <li>El nombre del sistema operativo (<code>ios</code> o <code>android</code>),
+    añadido al final del mensaje, porque el mismo problema se arregla distinto
+    en cada uno.</li>
+  </ul>
+  <p>Nada más. No se adjunta tu nombre, ni tu correo, ni un identificador de
+  dispositivo, ni tu ubicación, ni el contenido de tus ligas. No hay forma de
+  saber qué envío corresponde a qué instalación.</p>
+  <p>El mensaje llega a un formulario de Google Forms propiedad del
+  desarrollador. Google actúa como proveedor del servicio y registra la fecha y
+  hora del envío; su tratamiento se rige por la
+  <a href="https://policies.google.com/privacy">política de privacidad de
+  Google</a>. Si escribes datos personales en el cuerpo del mensaje, se enviarán
+  tal cual: depende enteramente de ti.</p>
+  <p><strong>Base legal</strong>: tu consentimiento, que das al pulsar «Enviar»
+  (art. 6.1.a).</p>
+
+  <h2>Con quién se comparten los datos</h2>
+  <p>Con nadie con fines comerciales, nunca. Los únicos terceros que intervienen
+  son proveedores técnicos, y solo para lo que se ha descrito arriba:</p>
+  <div class="scroll">
+    <table>
+      <tr><th>Proveedor</th><th>Para qué</th><th>Papel</th></tr>
+      <tr>
+        <td>Google Ireland Ltd. (Firebase Crashlytics)</td>
+        <td>Informes de fallos</td>
+        <td>Encargado del tratamiento</td>
+      </tr>
+      <tr>
+        <td>Google Ireland Ltd. (Firebase Remote Config)</td>
+        <td>Versión mínima</td>
+        <td>Encargado del tratamiento</td>
+      </tr>
+      <tr>
+        <td>Google Ireland Ltd. (Google Forms)</td>
+        <td>Buzón de sugerencias</td>
+        <td>Encargado del tratamiento</td>
+      </tr>
+      <tr>
+        <td>Biwenger</td>
+        <td>Tus propias peticiones, con tu propia cuenta</td>
+        <td>Responsable independiente</td>
+      </tr>
+    </table>
+  </div>
+  <p><strong>Transferencias internacionales</strong>: los servicios de Google
+  pueden tratar estos datos en servidores de Estados Unidos. La transferencia
+  está amparada por la decisión de adecuación del Marco de Privacidad de Datos
+  UE-EE. UU. y por las cláusulas contractuales tipo de Google.</p>
+
+  <h2>Cuánto tiempo se conservan</h2>
+  <div class="scroll">
+    <table>
+      <tr><th>Dato</th><th>Plazo</th></tr>
+      <tr>
+        <td>Todo lo que hay en la app</td>
+        <td>Mientras lo tengas tú. Lo borras cuando quieras</td>
+      </tr>
+      <tr>
+        <td>Informes de fallos</td>
+        <td>90 días, el plazo de retención de Crashlytics</td>
+      </tr>
+      <tr>
+        <td>Sugerencias</td>
+        <td>Mientras sigan siendo útiles para mejorar la app</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Qué NO hace Chivato</h2>
+  <ul>
+    <li>No lleva publicidad, ni SDK de publicidad.</li>
+    <li>No lleva analítica de uso: nadie sabe qué pantallas abres ni cuánto
+    tiempo pasas en ellas. Firebase Analytics <strong>no</strong> está
+    instalado.</li>
+    <li>No te rastrea ni dentro ni fuera de la aplicación, ni construye ningún
+    perfil tuyo, ni cruza tus datos con los de ninguna otra app o servicio.</li>
+    <li>No comparte, vende ni cede datos a terceros con fines comerciales.</li>
+    <li>No tiene un servidor propio donde vivan tus datos: no existe ninguna
+    base de datos nuestra en la que aparezcas.</li>
+    <li>No pide permisos del sistema: ni cámara, ni contactos, ni ubicación, ni
+    notificaciones. El único permiso declarado es acceso a internet.</li>
+  </ul>
+
+  <h2>Menores</h2>
+  <p>Chivato no está dirigida a menores de 14 años y no recopila conscientemente
+  datos de ellos. Catorce años es la edad a partir de la cual, en España, un
+  menor puede consentir por sí mismo el tratamiento de sus datos.</p>
+
+  <h2>Tus derechos</h2>
+  <ul>
+    <li><strong>Tus datos de la app</strong>: los controlas por completo desde el
+    propio dispositivo. Puedes borrar movimientos, rivales y ligas dentro de
+    Chivato, o desinstalarla para eliminarlo todo de una vez. No hace falta
+    pedírnoslo, porque no tenemos copia.</li>
+    <li><strong>Tus informes de fallos</strong>: los apagas con el interruptor de
+    la app. Si quieres que se borren los ya enviados, escríbenos.</li>
+    <li><strong>Tu sesión de Biwenger</strong>: se borra al desvincular la cuenta
+    o al desinstalar la app.</li>
+    <li><strong>Tus datos en Biwenger</strong>: los gestionas con ellos. Chivato
+    no puede modificarlos ni borrarlos.</li>
+    <li><strong>Tus sugerencias</strong>: si quieres que se borre un mensaje que
+    enviaste, escribe a la dirección de contacto indicando aproximadamente
+    cuándo lo mandaste y qué decía.</li>
+  </ul>
+  <p>Sobre cualquiera de estos datos puedes ejercer los derechos de acceso,
+  rectificación, supresión, limitación, portabilidad y oposición que te reconoce
+  el RGPD, escribiendo a
+  <a href="mailto:appchivato@gmail.com">appchivato@gmail.com</a>. Si crees
+  que no se han atendido, puedes reclamar ante la Agencia Española de Protección
+  de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si cambia algo relevante, se actualizará esta página y la fecha de arriba.
+  Si el cambio afectara a datos que salen del dispositivo, se avisará dentro de
+  la app antes de aplicarlo.</p>
+
+  <h2>Contacto</h2>
+  <p>Responsable del tratamiento: Marc Serra.<br>
+  Correo: <a href="mailto:appchivato@gmail.com">appchivato@gmail.com</a></p>
+
+  <footer>
+    Chivato es un proyecto independiente. No está afiliado, patrocinado ni
+    avalado por Biwenger, Mister, LaLiga ni ninguna otra marca mencionada.
+    <br><br>
+    <a href="terminos-de-uso.html">Términos de uso</a>
+  </footer>
+</main>
+</body>
+</html>
